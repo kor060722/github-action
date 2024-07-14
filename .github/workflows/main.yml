@@ -8,8 +8,10 @@ jobs:
     name: dev-job-first
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: Crate a dev.txt
+      run: echo "dev file" > dev.txt
+    - uses: actions/upload-artifact@4
       with:
-        repository: dml113/github-action
-        token: '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'
-    - run: cat *
+        name: dev-artifact
+        path: ./dev.txt
+        
