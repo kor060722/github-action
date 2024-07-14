@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step 1
-      run: echo "dev-job-first step 1"
+      run: |
+          echo "step 1 start time"
+          date +"%Y-%m-%d %H:%M:%S.%N"
     - name: step 2
-      run: echo "dev-job-first step 2"
+      run: |
+          echo "step 2 start time"
+          date +"%Y-%m-%d %H:%M:%S.%N"
