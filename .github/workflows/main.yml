@@ -1,0 +1,14 @@
+name: Dev Workflows
+on:
+  push:
+    branchs:
+    - main
+jobs:
+  dev-job-first:
+    name: dev-job-first
+    runs-on: ubuntu-latest
+    steps:
+    - name: step 1
+      run: echo "dev-job-first step 1"
+    - name: step 2
+      run: echo "dev-job-first step 2"
