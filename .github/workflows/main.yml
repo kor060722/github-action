@@ -8,6 +8,5 @@ jobs:
     name: dev-job-first
     runs-on: ubuntu-latest
     steps:
-    - name: step 1
     - uses: actions/checkout@v4
-      run: cat README.md
+    - run: cat README.md
