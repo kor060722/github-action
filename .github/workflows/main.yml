@@ -9,24 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step 1
-      run: |
-          echo "job 1 / step 1 start time"
-          date +"%Y-%m-%d %H:%M:%S.%N"
-    - name: step 2
-      run: |
-          echo "job 1 / step 2 start time"
-          date +"%Y-%m-%d %H:%M:%S.%N"
-
-  dev-job-second:
-    name: dev-job-second
-    runs-on: ubuntu-latest
-    needs: dev-job-first
-    steps:
-    - name: step 1
-      run: |
-          echo "job 2 / step 1 start time"
-          date +"%Y-%m-%d %H:%M:%S.%N"
-    - name: step 2
-      run: |
-          echo "job 2 / step 2 start time"
-          date +"%Y-%m-%d %H:%M:%S.%N"
+    - uses: actions/checkout@v4
+    - run: cat README.md
