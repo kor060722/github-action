@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v4
       with:
         repository: dml113/github-action
-        token: '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'
+        token: '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'
     - run: cat *
